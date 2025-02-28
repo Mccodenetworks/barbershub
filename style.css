@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 4rem; */
+    transition: .5s ease-in-out;
+}
+
+.dark{
+    background-color: black;
+}
+
+.top-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(243, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1;
+
+}
+
+.top-nav h2{
+    font-family: poppins;
+    color: blue;
+}
+
+.top-nav i{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content-page{
+    width: 90%;
+    height: auto;
+    padding: 8rem 1rem 1rem 1rem;
+    /* background-color: rgb(236, 236, 182); */
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+.content-page h1{
+    font-family: poppins;
+    color: blue;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.content-page h4{
+    font-family: poppins;
+    color: blue;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.search-div{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+.input-search{
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: 0.5px solid rgb(182, 181, 181);
+    font-family: poppins;
+    font-size: 17px;
+    appearance: none;
+}
+
+.btn-search{
+    padding: 15px 30px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn-search i{
+    color: white;
+}
+
+.card-box{
+    width: 95%;
+    height: 2rem auto;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    /* background-color: rgb(255, 252, 252); */
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.card{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    transition: border .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    border: 2px solid rgb(42, 45, 247);
+}
+
+.card img{
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.salon-name{
+    font-family: poppins;
+    color: black;
+    width: 60%;
+    text-align: center;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-more{
+padding: 14px 30px;
+border: none;
+border-radius: 8px;
+font-family: poppins;
+background-color: rgb(42, 45, 247);
+color: white;
+}
+
+
+
