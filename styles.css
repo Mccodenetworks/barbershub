@@ -1,4 +1,4 @@
-@media (max-width:500px) {
+@media (max-width:500px){
 
     .content-page{
         width: 95%;
@@ -26,17 +26,37 @@
 
     /* profile sections display */
     .barbers-profile img{
-        width: 50%;
+        max-width: 50%;
     }
 
     .barbers-profile h2{
         /* width:80%; */
-        font-size:1.9rem;
+        font-size:3rem;
         line-height: 1.9rem;
+        text-align: center;
+        width: 75%;
+
+    }
+
+    .loc-time{
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(227, 233, 240);
+        font-family: poppins;
+        color: black;
+        text-align: center;
+    }
+    
+
+    .loc-time p{
+    margin-top: 16px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     }
 
     .btn-active{
-        padding: 10px 8px;
+        padding: 10px 2px;
     }
 
     .btn-active i{
@@ -44,11 +64,10 @@
     }
 
     .price-list{
-        width: 95%;
+        width: 98%;
     }
 
-    .loc-time h5{
-        font-size: 1rem;
-    }
+   
 
+ 
 }
