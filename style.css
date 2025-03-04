@@ -6,12 +6,12 @@
 
 .page-main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-color: white;
     justify-content: center;
     align-items: center;
-    /* padding-top: 4rem; */
+    padding-bottom: 2rem;
     transition: .5s ease-in-out;
 }
 
@@ -101,15 +101,15 @@
 
 .card-box{
     width: 95%;
-    height: 2rem auto;
+    height: auto;
     display: none;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    /* background-color: rgb(255, 252, 252); */
     margin: auto;
     padding: 10px;
     align-content: center;
     justify-content: center;
+
 }
 
 .card{
@@ -118,16 +118,16 @@
     justify-content: center;
     background-color: white;
     align-items: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
     border-radius: 20px;
-    border: 2px solid transparent;
+    border: 1px solid rgb(42, 45, 247);
     box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
     transition: border .3s ease-in-out;
     cursor: pointer;
 }
 
 .card:hover{
-    border: 2px solid rgb(42, 45, 247);
+   transform: translateX(-5px);
 }
 
 .card img{
@@ -148,10 +148,18 @@
 .btn-more{
 padding: 14px 30px;
 border: none;
+margin-bottom: 15px;
 border-radius: 8px;
 font-family: poppins;
 background-color: rgb(42, 45, 247);
 color: white;
+cursor: pointer;
+transition: .3s ease-in-out;
+}
+
+.btn-more:hover{
+    transform: translateX(10px);
+ 
 }
 
 
