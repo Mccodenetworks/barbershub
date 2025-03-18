@@ -15,41 +15,23 @@ const cardGrid = document.getElementById("car-grid");
 
 function showCard(){
 
-    if(searchInput.value == "ktu"){
+    if(searchInput.value == "ktu" || searchInput.value === "KTU"){
         ktu.style.display = "flex";
         ktu2.style.display = "flex";
         ktu3.style.display = "flex";
         cardGrid.style.display = "grid";
     }
 
-    else if(searchInput.value == "KTU"){
-        cardGrid.style.display = "grid";
-        ktu.style.display = "flex";
-        ktu2.style.display = "flex";
-        ktu3.style.display = "flex";
-    }
 
-    else if(searchInput.value == "Apenkwa"){
+    else if(searchInput.value == "Apenkwa" || searchInput.value == "apenkwa"){
         cardGrid.style.display = "grid";
         apenkwa1.style.display = "flex";
         apenkwa2.style.display = "flex";
         apenkwa3.style.display = "flex";
     }
 
-    else if(searchInput.value == "apenkwa"){
-        cardGrid.style.display = "grid";
-        apenkwa1.style.display = "flex";
-        apenkwa2.style.display = "flex";
-        apenkwa3.style.display = "flex";
-    }
 
-    else if(searchInput.value == "Adweso"){
-        cardGrid.style.display = "grid";
-        adweso.style.display = "flex";
-        adweso2.style.display = "flex";
-    }
-
-    else if(searchInput.value == "adweso"){
+    else if(searchInput.value == "Adweso" || searchInput.value == "adweso"){
         cardGrid.style.display = "grid";
         adweso.style.display = "flex";
         adweso2.style.display = "flex";
@@ -57,7 +39,7 @@ function showCard(){
 
 
     else{
-        alert("not found")
+        alert("No result")
     }
 
 }
